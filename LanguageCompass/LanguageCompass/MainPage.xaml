@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LanguageCompass"
+             x:Class="LanguageCompass.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+           
+        </Grid.RowDefinitions>
+        <Entry VerticalOptions="Center" HorizontalOptions="CenterAndExpand" x:Name="entry_word" Margin="10" Grid.Row="0"></Entry>
+        <Button x:Name="btn_search" VerticalOptions="Start" Clicked="Btn_search_Clicked" Grid.Row="1" Text="Tra Cứu" Margin="30"></Button>
+        <Label x:Name="lb_content" Text="Definition goes here" Margin="10" Grid.Row="2"/>
+
+    </Grid>
+    
+
+</ContentPage>
